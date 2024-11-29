@@ -4,6 +4,17 @@
 #include <ctime>
 #include <iomanip>
 
+
+
+//////////////////////// Ayush Pareek ////////////////////// 
+/////                                                   ////
+/////          Reinforcement Learning (Q- learning)     ////
+/////                                                   //// 
+/////                  Feel Free to use                 ////
+/////                                                   ////
+/////////////////////// 30-11-2024 /////////////////////////
+
+
 namespace ql{
 
 class QL_RL{
