@@ -32,7 +32,7 @@ class QL_RL{
 
     void trainer();
 
-    void optimumPolicy();
+    void printOptimumPolicy();
 
 };
 
