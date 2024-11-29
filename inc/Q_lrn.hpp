@@ -4,7 +4,7 @@
 #include <ctime>
 #include <iomanip>
 
-
+namespace ql{
 
 class QL_RL{
     private:
@@ -21,7 +21,8 @@ class QL_RL{
 
     public:
 
-    QL_RL(int Grid_size,int epochs,double Alpha,double gamma,double epsilon);
+    QL_RL(int Grid_size,int epochs,double Alpha,double gamma,double epsilon,
+    std::vector<std::vector<int>> Data_Grid,std::vector<std::vector<std::vector<double>>> qValue);
     
     int chooseAction(int a,int b);
 
@@ -35,4 +36,5 @@ class QL_RL{
 
 };
 
+};
 
