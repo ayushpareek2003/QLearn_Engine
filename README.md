@@ -1,4 +1,4 @@
-Reinforcement Learning with Q-Learning in C++
+//Reinforcement Learning with Q-Learning in C++
 This repository showcases the implementation of Q-Learning using the Bellman Equation for grid-based environments. The project is written in C++ and structured with a clear separation of concerns for easy extensibility and maintenance. It's designed for developers and students exploring reinforcement learning concepts.
 
 Features:
