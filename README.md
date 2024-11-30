@@ -40,4 +40,6 @@ Organize the files as follows:
 ## How to Run the Program
 ### 1. Folder Structure
 Organize the files as follows:
-/project ├── src │ └── Q_Agent.cpp ├── inc │ └── Q_Agent.hpp └── main.cpp
+- **`src/`**: Contains the C++ source file with the implementation of the `QL_RL` class.
+- **`inc/`**: Holds the header file that declares the `QL_RL` class and its methods.
+- **`main.cpp`**: The main file used to run and test the Q-Learning implementation.
