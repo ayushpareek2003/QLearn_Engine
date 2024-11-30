@@ -43,3 +43,33 @@ Organize the files as follows:
 - **`src/`**: Contains the C++ source file with the implementation of the `QL_RL` class.
 - **`inc/`**: Holds the header file that declares the `QL_RL` class and its methods.
 - **`main.cpp`**: The main file used to run and test the Q-Learning implementation.
+
+## Sample Run
+
+### Input Data
+
+```cpp
+    std::vector<std::vector<int>> grid = {
+        {0, -1,  0,  0,  0},
+        {0,  0,  0, -1,  0},
+        {0, -1,  0,  0,  0},
+        {0,  0,  0,  0,  0},
+        {0,  0,  0, -1, 10}
+    };
+
+    std::vector<std::vector<std::vector<double>>> qValues(5, std::vector<std::vector<double>>(5, std::vector<double>(4, 0.0)));
+}
+```
+
+### Output
+```bash
+Optimal Policy:
+ D   X   R   R   D 
+ D   D   R   X   D 
+ D   X   D   R   D 
+ R   R   D   R   D 
+ R   R   R   X   G
+```
+
+
+
