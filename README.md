@@ -34,15 +34,19 @@ This repository implements **Q-Learning** for grid-based environments using the 
 
 ---
 
-## How to Run the Program
-### 1. Folder Structure
-Organize the files as follows:
+
 ## How to Run the Program
 ### 1. Folder Structure
 Organize the files as follows:
 - **`src/`**: Contains the C++ source file with the implementation of the `QL_RL` class.
 - **`inc/`**: Holds the header file that declares the `QL_RL` class and its methods.
 - **`main.cpp`**: The main file used to run and test the Q-Learning implementation.
+
+### 2. Run this command
+```bash
+cl /EHsc main.cpp src\Q_Agent.cpp /I inc
+```
+
 
 ## Sample Run
 
