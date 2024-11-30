@@ -37,3 +37,7 @@ This repository implements **Q-Learning** for grid-based environments using the 
 ## How to Run the Program
 ### 1. Folder Structure
 Organize the files as follows:
+## How to Run the Program
+### 1. Folder Structure
+Organize the files as follows:
+/project ├── src │ └── Q_Agent.cpp ├── inc │ └── Q_Agent.hpp └── main.cpp
