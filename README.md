@@ -1,30 +1,39 @@
 # Reinforcement Learning with Q-Learning in C++
-This repository showcases the implementation of Q-Learning using the Bellman Equation for grid-based environments. The project is written in C++ and structured with a clear separation of concerns for easy extensibility and maintenance. It's designed for developers and students exploring reinforcement learning concepts.
 
-## Features:
-Core Functionality: Encapsulated within the QL_RL class inside the ql namespace.
-Customizable Parameters:
-Grid size (Grid_Size)
-Number of epochs (epochs)
-Learning rate (Alpha)
-Discount factor (gamma)
-Exploration-exploitation rate (epsilon)
-Dynamic Action Selection: Balances exploration and exploitation to optimize learning.
-Optimal Policy Visualization: Displays the grid and actions leading to the goal.
+This repository implements **Q-Learning** for grid-based environments using the **Bellman Equation**. It is written in C++ with a clear and modular structure, making it an excellent resource for learning and experimentation in reinforcement learning.
 
-## Code Structure:
+---
 
-### Header File (Q_Agent.hpp):
-Defines the QL_RL class with:
-Private members for configuration, Q-table, and grid.
-Public methods for training, action selection, table updates, and policy display.
+## Features
+- **Core Functionality**:
+  - Implemented in the `QL_RL` class under the `ql` namespace.
+- **Customizable Parameters**:
+  - Grid size (`Grid_Size`)
+  - Number of epochs (`epochs`)
+  - Learning rate (`Alpha`)
+  - Discount factor (`gamma`)
+  - Exploration-exploitation rate (`epsilon`)
+- **Optimal Policy Visualization**: Displays an intuitive grid-based optimal policy.
+- **Dynamic Action Selection**: Implements the epsilon-greedy approach for exploration and exploitation.
 
-### Source File (Q_Agent.cpp):
-Implements all methods:
-chooseAction: Chooses an action based on the Q-values and epsilon-greedy policy.
-update_table: Updates the Q-values using the Bellman Equation.
-trainer: Simulates the agent's training process on the grid.
-printOptimumPolicy: Displays the optimal policy for the grid.
+---
 
-### Main Program:
-Creates an instance of the QL_RL class, initializes parameters, and runs training.
+## Code Structure
+1. **Header File (`Q_Agent.hpp`)**:
+   - Defines the `QL_RL` class and its methods for training, action selection, table updates, and policy display.
+   
+2. **Source File (`Q_Agent.cpp`)**:
+   - Implements the Q-Learning algorithm, including:
+     - Action selection (`chooseAction`)
+     - Q-value updates (`update_table`)
+     - Grid navigation during training (`trainer`)
+     - Displaying the learned policy (`printOptimumPolicy`)
+   
+3. **Main Program (`main.cpp`)**:
+   - Initializes the agent, trains it on the grid, and displays the resulting optimal policy.
+
+---
+
+## How to Run the Program
+### 1. Folder Structure
+Organize the files as follows:
